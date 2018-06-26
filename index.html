@@ -10,22 +10,21 @@
 </head>
 <body>
 
-	<header role='heading' class='heading'>
+	<header role='heading' class='heading' aria-level='1'>
 		<h1>Search for a YouTube video: </h1>
 	</header>
 
-	<main role = 'main' class = 'main-form'>
+	<main role = 'main' class = 'main-form' aria-live='assertive'>
 		<form class = 'search-form' action='#'>
-			<label for= 'js-query'></label>
+			<label for= 'js-query' aria-label='youtube search'></label>
 			<input type='text' id='js-query' placeholder="e.g., Beyonce...">
 			<button type='submit'>Search</button>
 		</form>
+  </main>
 
     <h2>Results</h2>
 
-		<div class ='results'></div>
-
-	</main>
+		<div class ='results' aria-live='assertive' hidden></div>
 
     <script src="index.js"></script>
 </body>
