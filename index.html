@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = en>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Thinkful Tube</title>
+	<meta name="search" content="search for youtube videos">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+	<header role='heading' class='heading'>
+		<h1>Search for a YouTube video: </h1>
+	</header>
+
+	<main role = 'main' class = 'main-form'>
+		<form class = 'search-form' action='#'>
+			<label for= 'js-query'></label>
+			<input type='text' id='js-query' placeholder="e.g., Beyonce...">
+			<button type='submit'>Search</button>
+		</form>
+
+    <h2>Results</h2>
+
+		<div class ='results'></div>
+
+	</main>
+
+    <script src="index.js"></script>
+</body>
+</html>
