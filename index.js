@@ -40,19 +40,18 @@ function showTotalResults(total) {
 
 function getSearchData(data){
 	//based on the query, this wil gather the data to put in the search.
-  // console.log(data); 
 	const results = data.items.map((item, index) => renderResults(item));
-  $('.results').append(results);
-  // getTotalResults(); 
-  const totalResults = `${data.pageInfo.totalResults}`;
+  	$('.results').append(results);
+  	// getTotalResults(); 
+  	const totalResults = `${data.pageInfo.totalResults}`;
 
-  showTotalResults(totalResults);
+  	showTotalResults(totalResults);
 
-  const outputElem = $('.results');
+  	const outputElem = $('.results');
 
-  outputElem
-    .prop('hidden', false)
-    .append(results);
+  	outputElem
+    	.prop('hidden', false)
+    	.append(results);
 }
 
 function handleSubmit(){
